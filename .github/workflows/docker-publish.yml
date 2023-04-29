@@ -2,9 +2,9 @@ name: Publish To GHCR
 
 on:   
   workflow_dispatch:
-  #push:
-  #  branches:
-  #  - master
+  push:
+    branches:
+    - master
 
 env:
   IMAGE_NAME: mpp-solar
