@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Build image
-        run: docker build . --file docker/prod/Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
+        run: docker build . --file docs/service/Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
         # This is where you will update the PATH to GITHUB_TOKEN
